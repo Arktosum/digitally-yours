@@ -13,7 +13,7 @@ const CoursesPage: React.FC = () => {
   const [courses, setCourses] = useState<Course[]>([]);
 
   useEffect(() => {
-    fetch("http://192.168.1.187:4000/mentor/uploads")
+    fetch("https://digitally-yours.onrender.com/mentor/uploads")
       .then((res) => res.json())
       .then((data) => {
         setCourses(data["uploads"]);
@@ -57,8 +57,7 @@ const CoursesPage: React.FC = () => {
             onExplore={() => {
               window.open(course.url, "_blank");
             }}
-            onDownload={async () => {
-            }}
+            onDownload={async () => {}}
           />
         ))}
       </main>
