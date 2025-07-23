@@ -1,7 +1,9 @@
 import React from "react";
 import UploadDocuments from "../components/UploadDocuments";
 import Footer from "../components/Footer";
+import { useNavigate } from "react-router-dom";
 const MentorUploadPage: React.FC = () => {
+  const navigate = useNavigate();
   const handleUpload = async (files: File[], title: string) => {
     console.log("Uploading:", files);
     const form = new FormData();
@@ -17,6 +19,7 @@ const MentorUploadPage: React.FC = () => {
       );
       const data = await res.json();
       console.log("Upload success:", data);
+      navigate("/mentor");
     } catch (err) {
       console.error("Upload failed:", err);
     }

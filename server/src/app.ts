@@ -29,7 +29,7 @@ const storage = multer.diskStorage({
     }
 });
 const fileFilter = (_req: express.Request, file: Express.Multer.File, cb: multer.FileFilterCallback) => {
-    const allowed = ['.pdf', '.docx'];
+    const allowed = ['.pdf','.pptx', '.docx'];
     const ext = path.extname(file.originalname).toLowerCase();
     cb(null, allowed.includes(ext));
 };

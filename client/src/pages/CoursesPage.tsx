@@ -1,23 +1,23 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Footer from "../components/Footer";
 import CourseCard from "../components/CourseCard";
 
-// interface Course {
-//   filename: string;
-//   original: string;
-//   title: string;
-//   uploadedAt: Date;
-//   url: string;
-// }
+interface Course {
+  filename: string;
+  original: string;
+  title: string;
+  uploadedAt: Date;
+  url: string;
+}
 const CoursesPage: React.FC = () => {
-
-  // useEffect(() => {
-  //   fetch("https://digitally-yours.onrender.com/mentor/uploads")
-  //     .then((res) => res.json())
-  //     .then((data) => {
-  //       setCourses(data["uploads"]);
-  //     });
-  // }, []);
+  const [courses, setCourses] = useState<Course[]>([]);
+  useEffect(() => {
+    fetch("https://digitally-yours.onrender.com/mentor/uploads")
+      .then((res) => res.json())
+      .then((data) => {
+        setCourses(data["uploads"]);
+      });
+  }, []);
 
   return (
     <div className="min-h-screen flex flex-col ">
@@ -55,16 +55,14 @@ const CoursesPage: React.FC = () => {
         </div>
 
         <div className="flex flex-col gap-5 my-10">
-          {["Digital Literacy", "Financial Literacy", "Computer Skills"].map(
-            (course) => (
-              <CourseCard
-                key={course}
-                title={course}
-                onExplore={() => console.log("Explore", course)}
-                onDownload={() => console.log("Download", course)}
-              />
-            )
-          )}
+          {courses.map((course) => (
+            <CourseCard
+              key={course.original}
+              title={course.title}
+              onExplore={() => console.log("Explore", course)}
+              onDownload={() => console.log("Download", course)}
+            />
+          ))}
         </div>
       </main>
 

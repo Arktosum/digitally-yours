@@ -83,6 +83,21 @@ const UploadDocuments: React.FC<UploadDocumentsProps> = ({ onUpload }) => {
               Browse files
             </span>
           </p>
+          <div className="w-full">
+            {files.length > 0 && (
+              <div className="mt-4 text-left">
+                <p className="font-semibold">
+                  Selected file{files.length > 1 ? "s" : ""}:
+                </p>
+                <ul className="">
+                  {files.map((f, i) => (
+                    <li className="text-[0.9rem] w-full overflow-clip text-ellipsis" key={i}>{f.name}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
+          </div>
+
           <input
             ref={inputRef}
             type="file"

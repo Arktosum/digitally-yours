@@ -1,10 +1,31 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Footer from "../components/Footer";
 import CourseCard from "../components/CourseCard";
 import { useNavigate } from "react-router-dom";
 
+interface Course {
+  filename: string;
+  original: string;
+  title: string;
+  uploadedAt: Date;
+  url: string;
+}
+
 const CoursePage: React.FC = () => {
   const navigate = useNavigate();
+  const [courses, setCourses] = useState<Course[]>([]);
+  const [searchCourse, setSearchCourse] = useState<string>("");
+  useEffect(() => {
+    fetch("https://digitally-yours.onrender.com/mentor/uploads")
+      .then((res) => res.json())
+      .then((data) => {
+        setCourses(data["uploads"]);
+      });
+  }, []);
+
+  const filteredCourses = courses.filter((item) =>
+    new RegExp(searchCourse, "i").test(item.title)
+  );
 
   return (
     <div className="min-h-screen flex flex-col ">
@@ -38,44 +59,59 @@ const CoursePage: React.FC = () => {
             type="text"
             placeholder="Search Courses"
             className=" w-[100%] bg-[#ECE6F0] rounded-full py-3 px-5 shadow focus:outline-none"
+            value={searchCourse}
+            onChange={(e) => {
+              setSearchCourse(e.target.value);
+            }}
           />
         </div>
-
+        <div
+          onClick={() => {
+            navigate("/mentor/upload");
+          }}
+          className="bg-[#ECE6F0] px-10 py-3 w-fit rounded my-10 self-center text-black flex justify-center items-center gap-5 mx-auto"
+        >
+          Upload Course
+          <span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              className="bi bi-upload"
+              viewBox="0 0 16 16"
+            >
+              <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5" />
+              <path d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708z" />
+            </svg>
+          </span>
+        </div>
         <div className="flex flex-col gap-5 my-10">
-          {["Digital Literacy", "Financial Literacy", "Computer Skills"].map(
-            (course) => (
-              <CourseCard
-                key={course}
-                title={course}
-                onExplore={() => console.log("Explore", course)}
-                onDownload={() => console.log("Download", course)}
-              />
-            )
+          {filteredCourses.map((course) => (
+            <CourseCard
+              key={course.original}
+              title={course.title}
+              onExplore={() => {
+                const link = document.createElement("a");
+                link.href = `https://digitally-yours.onrender.com/uploads/${course.original}`; // must be accessible
+                link.download = course.original;
+                link.target = "_blank"; // optional
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+              }}
+              onDownload={() => console.log("Download", course)}
+            />
+          ))}
+          {filteredCourses.length == 0 && (
+            <div className="font-poppins font-bold mx-auto text-xl">
+              {" "}
+              Course not found!{" "}
+            </div>
           )}
         </div>
       </main>
 
-      <div
-        onClick={() => {
-          navigate("/mentor/upload");
-        }}
-        className="bg-[#ECE6F0] px-10 py-3 w-fit rounded my-10 self-center text-black flex justify-center items-center gap-5"
-      >
-        Upload Course
-        <span>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="currentColor"
-            className="bi bi-upload"
-            viewBox="0 0 16 16"
-          >
-            <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5" />
-            <path d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708z" />
-          </svg>
-        </span>
-      </div>
       <Footer />
     </div>
   );
