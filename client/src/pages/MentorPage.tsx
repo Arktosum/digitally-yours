@@ -91,7 +91,7 @@ const CoursePage: React.FC = () => {
             <CourseCard
               key={course.original}
               title={course.title}
-              onExplore={() => {
+              onDownload={() => {
                 const link = document.createElement("a");
                 link.href = `https://digitally-yours.onrender.com/uploads/${course.original}`; // must be accessible
                 link.download = course.original;
@@ -100,7 +100,6 @@ const CoursePage: React.FC = () => {
                 link.click();
                 document.body.removeChild(link);
               }}
-              onDownload={() => console.log("Download", course)}
             />
           ))}
           {filteredCourses.length == 0 && (

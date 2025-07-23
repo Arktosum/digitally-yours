@@ -11,6 +11,7 @@ interface Course {
 }
 const CoursesPage: React.FC = () => {
   const [courses, setCourses] = useState<Course[]>([]);
+  const [searchCourse, setSearchCourse] = useState<string>("");
   useEffect(() => {
     fetch("https://digitally-yours.onrender.com/mentor/uploads")
       .then((res) => res.json())
@@ -18,6 +19,10 @@ const CoursesPage: React.FC = () => {
         setCourses(data["uploads"]);
       });
   }, []);
+
+  const filteredCourses = courses.filter((item) =>
+    new RegExp(searchCourse, "i").test(item.title)
+  );
 
   return (
     <div className="min-h-screen flex flex-col ">
@@ -51,18 +56,35 @@ const CoursesPage: React.FC = () => {
             type="text"
             placeholder="Search Courses"
             className=" w-[100%] bg-[#ECE6F0] rounded-full py-3 px-5 shadow focus:outline-none"
+            value={searchCourse}
+            onChange={(e) => {
+              setSearchCourse(e.target.value);
+            }}
           />
         </div>
 
         <div className="flex flex-col gap-5 my-10">
-          {courses.map((course) => (
+          {filteredCourses.map((course) => (
             <CourseCard
               key={course.original}
               title={course.title}
-              onExplore={() => console.log("Explore", course)}
-              onDownload={() => console.log("Download", course)}
+              onDownload={() => {
+                const link = document.createElement("a");
+                link.href = `https://digitally-yours.onrender.com/uploads/${course.original}`; // must be accessible
+                link.download = course.original;
+                link.target = "_blank"; // optional
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+              }}
             />
           ))}
+          {filteredCourses.length == 0 && (
+            <div className="font-poppins font-bold mx-auto text-xl">
+              {" "}
+              Course not found!{" "}
+            </div>
+          )}
         </div>
       </main>
 
