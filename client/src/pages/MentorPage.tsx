@@ -7,51 +7,59 @@ const CoursePage: React.FC = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="min-h-screen flex flex-col bg-gray-50">
-      <main className="flex-1 px-4">
-        <h1 className="text-2xl font-semibold mb-2">Welcome, Mentor!</h1>
-        <div className="bg-[#FBF4F7] p-4">
-          <p className="font-medium  mb-4 text-xl ">
-            <span className="text-orange-500 font-extrabold">
+    <div className="min-h-screen flex flex-col ">
+      <main className="flex-1">
+        <h1 className="text-2xl font-inter font-semibold my-10 px-4">
+          Welcome, Mentor!
+        </h1>
+        <div className="bg-[#FBF4F7] p-5 flex  flex-col items-center">
+          <p className="font-medium mb-4 text-xl">
+            <span className="text-[#FFA500] font-extrabold">
               Because Learning has no limits —{" "}
             </span>{" "}
             and neither should access to it.
           </p>
-          <p className="text-gray-600 mb-4">
-            Explore easy lessons, hands-on tips, and build confidence step by
-            step.
+          <p className="text-[#2E2E2E] text-sm font-inter mb-4 flex flex-col items-center">
+            <span>Explore easy lessons, hands-on tips, and build</span>
+            <span>confidence step by step.</span>
           </p>
         </div>
-        <p className="my-2 px-2 text-xl">
+        <p className="my-15 px-2 text-md font-bold font-inter text-center">
           Hello! What Do you want to Teach Today?
         </p>
-        <div className="relative mb-6">
+        <div className="px-2 mx-2 relative flex justify-between">
+          <img
+            src="search_icon.svg"
+            alt="icon"
+            className="pointer-events-none absolute right-10 top-1/2 w-5 h-5 transform -translate-y-1/2 text-gray-400"
+          />
+
           <input
             type="text"
             placeholder="Search Courses"
-            className="w-full max-w-md mx-auto bg-white rounded-full py-3 px-5 shadow focus:outline-none"
+            className=" w-[100%] bg-[#ECE6F0] rounded-full py-3 px-5 shadow focus:outline-none"
           />
-          <button className="absolute right-8 top-1/2 transform -translate-y-1/2 text-gray-400">
-            🔍
-          </button>
         </div>
-        {["Digital Literacy", "Financial Literacy", "Computer Skills"].map(
-          (course) => (
-            <CourseCard
-              key={course}
-              title={course}
-              onExplore={() => console.log("Explore", course)}
-              onDownload={() => console.log("Download", course)}
-            />
-          )
-        )}
+
+        <div className="flex flex-col gap-5 my-10">
+          {["Digital Literacy", "Financial Literacy", "Computer Skills"].map(
+            (course) => (
+              <CourseCard
+                key={course}
+                title={course}
+                onExplore={() => console.log("Explore", course)}
+                onDownload={() => console.log("Download", course)}
+              />
+            )
+          )}
+        </div>
       </main>
 
       <div
         onClick={() => {
           navigate("/mentor/upload");
         }}
-        className="bg-blue-300 px-5 py-2 w-fit rounded-xl my-2 self-center text-white flex justify-center items-center gap-5"
+        className="bg-[#ECE6F0] px-10 py-3 w-fit rounded my-10 self-center text-black flex justify-center items-center gap-5"
       >
         Upload Course
         <span>

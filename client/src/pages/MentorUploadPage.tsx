@@ -23,7 +23,7 @@ const MentorUploadPage: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-gray-50">
+    <div className="min-h-screen flex flex-col ">
       <main className="flex-1 p-4">
         <h1 className="text-xl font-semibold mb-4">Hello, Mentor!</h1>
         <UploadDocuments onUpload={handleUpload} />

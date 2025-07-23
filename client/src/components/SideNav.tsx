@@ -24,38 +24,37 @@ const SideNav: React.FC<SideNavProps> = ({ isOpen, onClose }) => (
       } rounded-r-2xl borderize`}
       style={{ width: "70%" }}
     >
-      <div className="p-4 border-b flex items-center gap-5">
-        <img src="/brand-logo.png" alt="Digitally Yours" className="h-10" />
-        <span className="font-bold text-lg">Digitally Yours</span>
+      <div className="p-3 flex items-center gap-5">
+        <img src="/brand-logo.png" alt="Digitally Yours" className="h-12" />
+        <span className="font-inter font-bold text-xl text-[#0A5CAC]">
+          Digitally <span className="text-[#F9871D]">Yours</span>
+        </span>
       </div>
-      <nav className="p-5 space-y-6">
+      <hr className="w-[70%] text-gray-300 mx-auto mt-2 mb-10" />
+      <nav className="p-5 space-y-6 flex flex-col gap-5">
         <Link
           to="/"
           onClick={onClose}
-          className="flex items-center hover:text-blue-600"
+          className="flex items-center hover:text-blue-600 gap-5"
         >
-          <span className="mr-2">🏠</span>Home
-        </Link>
-        <Link
-          to="/reports"
-          onClick={onClose}
-          className="flex items-center hover:text-blue-600"
-        >
-          <span className="mr-2">📄</span>Reports
+          <img src="/home.svg" alt="" />
+          Home
         </Link>
         <Link
           to="/about"
           onClick={onClose}
-          className="flex items-center hover:text-blue-600"
+          className="flex items-center hover:text-blue-600 gap-5"
         >
-          <span className="mr-2">ℹ️</span>About Us
+          <img src="/about.svg" alt="" />
+          About Us
         </Link>
         <Link
           to="/change-path"
           onClick={onClose}
-          className="flex items-center hover:text-blue-600"
+          className="flex items-center hover:text-blue-600 gap-5"
         >
-          <span className="mr-2">🔁</span>Change Digital Path
+          <img src="/change.svg" className="w-6 h-6" alt="" />
+          Change Digital Path
         </Link>
         <button
           onClick={() => {
@@ -65,9 +64,10 @@ const SideNav: React.FC<SideNavProps> = ({ isOpen, onClose }) => (
             });
             onClose();
           }}
-          className="flex items-center hover:text-blue-600"
+          className="flex items-center hover:text-blue-600 gap-5"
         >
-          <span className="mr-2">🔗</span>Share it to a friend
+          <img src="/share.svg" alt="" />
+          Share it to a friend
         </button>
       </nav>
     </div>

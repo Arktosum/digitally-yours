@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 interface CourseCardProps {
   title: string;
@@ -6,12 +6,26 @@ interface CourseCardProps {
   onDownload: () => void;
 }
 
-const CourseCard: React.FC<CourseCardProps> = ({ title, onExplore, onDownload }) => (
-  <div className="mt-4 w-full max-w-md bg-white rounded-lg shadow p-4">
-    <h3 className="text-lg font-medium mb-2">{title}</h3>
-    <div className="flex space-x-2">
-      <button className="flex-1 bg-yellow-500 text-white py-2 rounded" onClick={onExplore}>Explore</button>
-      <button className="flex-1 bg-gray-200 text-gray-700 py-2 rounded" onClick={onDownload}>Download ↓</button>
+const CourseCard: React.FC<CourseCardProps> = ({
+  title,
+  onExplore,
+  onDownload,
+}) => (
+  <div className="p-5 m-5 bg-[#FBF4F7] font-inter border-[1px] border-gray-600 rounded-xl shadow-lg">
+    <h3 className="text-lg font-bold mb-10 text-center">{title}</h3>
+    <div className="flex flex-col gap-5">
+      <button
+        className="flex-1 bg-[#ECE6F0] text-black py-2 rounded border-1 border-gray-300"
+        onClick={onExplore}
+      >
+        Explore
+      </button>
+      <button
+        className="flex-1 bg-[#ECE6F0] text-black py-2 rounded border-1 border-gray-300"
+        onClick={onDownload}
+      >
+        Download ↓
+      </button>
     </div>
   </div>
 );

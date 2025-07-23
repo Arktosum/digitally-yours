@@ -7,6 +7,7 @@ import SideNav from "./components/SideNav";
 import "./App.css";
 import MentorPage from "./pages/MentorPage";
 import CoursesPage from "./pages/CoursesPage";
+import AboutUs from "./pages/AboutUs";
 export default function App() {
   const [sideOpen, setSideOpen] = useState(false);
   return (
@@ -17,6 +18,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/courses" element={<CoursesPage />} />
+          <Route path="/about" element={<AboutUs />} />
           <Route path="/mentor" element={<MentorPage />} />
           <Route path="/mentor/upload" element={<MentorUploadPage />} />
           <Route path="*" element={<Navigate to="/" />} />

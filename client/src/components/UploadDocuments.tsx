@@ -44,14 +44,14 @@ const UploadDocuments: React.FC<UploadDocumentsProps> = ({ onUpload }) => {
   const openFileDialog = () => inputRef.current?.click();
 
   return (
-    <div className="bg-white rounded shadow p-4 space-y-4">
+    <div className="bg-white font-inter rounded shadow p-4 space-y-4 border-[1px] border-gray-300">
       <h2 className="text-lg font-medium">Upload Documents</h2>
-
-      <label className="block">
+      <hr className="text-gray-300" />
+      <label className="block text-md font-semibold">
         Title
         <input
           type="text"
-          className="mt-1 w-full border rounded px-3 py-2"
+          className="my-5 w-full rounded px-5 py-3 text-sm border-[1px] border-gray-300"
           onChange={(e) => {
             setTitle(e.target.value);
           }}
@@ -60,6 +60,7 @@ const UploadDocuments: React.FC<UploadDocumentsProps> = ({ onUpload }) => {
         />
       </label>
 
+      <div className="block text-md">Attach Documents</div>
       <div
         className={`w-full border-2 border-dashed rounded p-6 text-center ${
           dragActive ? "border-blue-400 bg-blue-50" : "border-gray-300"
@@ -69,24 +70,14 @@ const UploadDocuments: React.FC<UploadDocumentsProps> = ({ onUpload }) => {
         onDrop={onDrop}
       >
         <div className="flex flex-col items-center gap-2 justify-center">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="32"
-            height="32"
-            fill="currentColor"
-            className="bi bi-upload"
-            viewBox="0 0 16 16"
-          >
-            <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5" />
-            <path d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708z" />
-          </svg>
+          <img src="/download.svg" alt="" />
           <p>
             Drag and Drop Here
             <br />
             or
             <br />
             <span
-              className="underline text-blue-600 cursor-pointer"
+              className="underline text-blue-400 cursor-pointer"
               onClick={openFileDialog}
             >
               Browse files
@@ -103,13 +94,21 @@ const UploadDocuments: React.FC<UploadDocumentsProps> = ({ onUpload }) => {
         </div>
       </div>
 
+      <div className="text-[#A5A4AC] text-sm my-5">
+        Accepted File Types : .pdf and .docx only
+      </div>
       <button
-        className="w-full bg-purple-200 text-gray-700 py-2 rounded disabled:opacity-50"
+        className="w-full bg-[#ECE6F0] text-[#0d0c0e] text-poppins py-2 rounded disabled:opacity-[50%]"
         disabled={!files.length}
         onClick={upload}
       >
         Upload
       </button>
+      <div className="my-10 text-black bg-white border-[1px] border-[#D1D1D1] p-5 text-sm">
+        <b className="font-bold">Note:</b> Please upload only relevant course
+        material, notes, or resources that learners can view or download. Avoid
+        uploading personal files or unrelated content.
+      </div>
     </div>
   );
 };
