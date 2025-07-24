@@ -25,7 +25,7 @@ const LandingPage: React.FC = () => {
     <div className="min-h-screen flex flex-col">
       <main className="flex-1 px-4 py-6 flex flex-col items-center">
         <img
-          src="/hero-image.png"
+          src="/hero_image_transparent.png"
           alt="Digital learning illustration"
           className="w-full max-w-md mb-4"
         />

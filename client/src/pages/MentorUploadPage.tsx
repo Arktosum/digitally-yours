@@ -10,13 +10,10 @@ const MentorUploadPage: React.FC = () => {
     form.append("title", title); // assuming you've added a title state
     files.forEach((f) => form.append("documents", f));
     try {
-      const res = await fetch(
-        "https://digitally-yours.onrender.com/mentor/upload",
-        {
-          method: "POST",
-          body: form,
-        }
-      );
+      const res = await fetch("http://localhost:4000/mentor/upload", {
+        method: "POST",
+        body: form,
+      });
       const data = await res.json();
       console.log("Upload success:", data);
       navigate("/mentor");

@@ -8,6 +8,8 @@ import "./App.css";
 import MentorPage from "./pages/MentorPage";
 import CoursesPage from "./pages/CoursesPage";
 import AboutUs from "./pages/AboutUs";
+import MentorViewAll from "./pages/MentorViewAll";
+import CoursesViewAll from "./pages/CoursesViewAll";
 export default function App() {
   const [sideOpen, setSideOpen] = useState(false);
   return (
@@ -20,6 +22,8 @@ export default function App() {
           <Route path="/courses" element={<CoursesPage />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/mentor" element={<MentorPage />} />
+          <Route path="/mentor/view_all" element={<MentorViewAll />} />
+          <Route path="/courses/view_all" element={<CoursesViewAll />} />
           <Route path="/mentor/upload" element={<MentorUploadPage />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>

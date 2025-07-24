@@ -38,6 +38,7 @@ export interface MetadataEntry {
     title: string;
     filename: string;
     original: string;
+    type : string
     uploadedAt: string; // ISO timestamp
 }
 
@@ -72,6 +73,7 @@ app.post('/mentor/upload', upload.array('documents'), (req, res) => {
     files.forEach(file => {
         const entry: MetadataEntry = {
             title,
+            type : 'learner',
             filename: file.filename,
             original: file.originalname,
             uploadedAt: new Date().toISOString()
@@ -103,7 +105,6 @@ app.get('/mentor/uploads', (req, res) => {
         console.error('Invalid metadata.json', err);
         return res.status(500).json({ error: 'Failed to read metadata' });
     }
-
     const enriched = data.uploads.map((entry: MetadataEntry) => ({
         ...entry,
         url: `${req.protocol}://${req.get('host')}/uploads/${encodeURIComponent(entry.filename)}`
