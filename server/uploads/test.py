@@ -2,8 +2,8 @@ import os
 import json
 from datetime import datetime
 
-folder = './learner'
-metadata_file = 'metadata_learner.json'
+folder = './learner/Financial Literacy'
+metadata_file = 'metadata_learner_fl.json'
 script_name = os.path.basename(__file__)
 uploads = []
 
@@ -22,8 +22,9 @@ else:
         uploads.append({
             "title": name,
             "filename": fake_uploaded_name,
-            "type" : "learner",
-            "original": "/learner/"+filename,
+            "type": "learner",
+            "original": "/learner/Financial Literacy/"+filename,
+            "category": "FL",
             "uploadedAt": datetime.utcnow().isoformat() + "Z"
         })
 

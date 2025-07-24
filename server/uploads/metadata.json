@@ -8,45 +8,38 @@
       "uploadedAt": "2025-07-24T06:46:09.425915Z"
     },
     {
-      "title": "COMMON VOCAB FOR CORPORATE",
+      "title": "COMMON VOCABULARY FOR CORPORATE",
       "filename": "COMMON VOCAB FOR CORPORATE-1753319769425.docx",
       "type": "trainer",
       "original": "trainer/COMMON VOCAB FOR CORPORATE.docx",
       "uploadedAt": "2025-07-24T06:46:09.425915Z"
     },
     {
-      "title": "Digital Literacy- trainer notes",
+      "title": "Digital Literacy",
       "filename": "Digital Literacy- trainer notes-1753319769425.docx",
       "type": "trainer",
       "original": "trainer/Digital Literacy- trainer notes.docx",
       "uploadedAt": "2025-07-24T06:46:09.425915Z"
     },
     {
-      "title": "FINANCIAL LITERACY- trainer notes",
+      "title": "FINANCIAL LITERACY",
       "filename": "FINANCIAL LITERACY- trainer notes-1753319769425.docx",
       "type": "trainer",
       "original": "trainer/FINANCIAL LITERACY- trainer notes.docx",
       "uploadedAt": "2025-07-24T06:46:09.425915Z"
     },
     {
-      "title": "ARTIFICIAL INTELLIGENCE - trainer notes",
+      "title": "ARTIFICIAL INTELLIGENCE",
       "filename": "ARTIFICIAL INTELLIGENCE - trainer notes-1753319769425.docx",
       "type": "trainer",
       "original": "trainer/ARTIFICIAL INTELLIGENCE - trainer notes.docx",
       "uploadedAt": "2025-07-24T06:46:09.425915Z"
     },
     {
-      "title": "Computer Skills- trainer notes",
+      "title": "Computer Skills",
       "filename": "Computer Skills- trainer notes-1753319769425.docx",
       "type": "trainer",
       "original": "trainer/Computer Skills- trainer notes.docx",
-      "uploadedAt": "2025-07-24T06:46:09.425915Z"
-    },
-    {
-      "title": "Digital dilemma- game",
-      "filename": "Digital dilemma- game-1753319769425.pptx",
-      "type": "trainer",
-      "original": "trainer/Digital dilemma- game.pptx",
       "uploadedAt": "2025-07-24T06:46:09.425915Z"
     },
     {
@@ -57,340 +50,388 @@
       "uploadedAt": "2025-07-24T06:46:45.962636Z"
     },
     {
-      "title": "Corporate Vocabulary",
-      "filename": "Corporate Vocabulary-1753319805960.pptx",
-      "type": "learner",
-      "original": "learner/Corporate Vocabulary.pptx",
-      "uploadedAt": "2025-07-24T06:46:45.960631Z"
-    },
-    {
-      "title": "Digital literacy- intro",
-      "filename": "Digital literacy- intro-1753319805960.pptx",
-      "type": "learner",
-      "original": "learner/Digital literacy- intro.pptx",
-      "uploadedAt": "2025-07-24T06:46:45.960631Z"
-    },
-    {
-      "title": "Accessible Job Platforms",
-      "filename": "Accessible Job Platforms-1753319805960.pptx",
-      "type": "learner",
-      "original": "learner/Accessible Job Platforms.pptx",
-      "uploadedAt": "2025-07-24T06:46:45.960631Z"
-    },
-    {
-      "title": "Accessing govt services for PWD",
-      "filename": "Accessing govt services for PWD-1753319805960.pptx",
-      "type": "learner",
-      "original": "learner/Accessing govt services for PWD.pptx",
-      "uploadedAt": "2025-07-24T06:46:45.960631Z"
-    },
-    {
       "title": "AI - contd",
-      "filename": "AI - contd-1753319805960.pptx",
+      "filename": "AI - contd-1753325369672.pptx",
       "type": "learner",
-      "original": "learner/AI - contd.pptx",
-      "uploadedAt": "2025-07-24T06:46:45.960631Z"
+      "original": "learner/AI/AI - contd.pptx",
+      "category": "AI",
+      "uploadedAt": "2025-07-24T08:19:29.672751Z"
     },
     {
       "title": "AI in Excel",
-      "filename": "AI in Excel-1753319805960.pptx",
+      "filename": "AI in Excel-1753325369672.pptx",
       "type": "learner",
-      "original": "learner/AI in Excel.pptx",
-      "uploadedAt": "2025-07-24T06:46:45.960631Z"
+      "original": "learner/AI/AI in Excel.pptx",
+      "category": "AI",
+      "uploadedAt": "2025-07-24T08:19:29.672751Z"
     },
     {
       "title": "AI in google docs",
-      "filename": "AI in google docs-1753319805960.pptx",
+      "filename": "AI in google docs-1753325369672.pptx",
       "type": "learner",
-      "original": "learner/AI in google docs.pptx",
-      "uploadedAt": "2025-07-24T06:46:45.960631Z"
+      "original": "learner/AI/AI in google docs.pptx",
+      "category": "AI",
+      "uploadedAt": "2025-07-24T08:19:29.672751Z"
     },
     {
       "title": "AI in google sheets",
-      "filename": "AI in google sheets-1753319805960.pptx",
+      "filename": "AI in google sheets-1753325369672.pptx",
       "type": "learner",
-      "original": "learner/AI in google sheets.pptx",
-      "uploadedAt": "2025-07-24T06:46:45.960631Z"
+      "original": "learner/AI/AI in google sheets.pptx",
+      "category": "AI",
+      "uploadedAt": "2025-07-24T08:19:29.672751Z"
     },
     {
       "title": "AI in MSword",
-      "filename": "AI in MSword-1753319805960.pptx",
+      "filename": "AI in MSword-1753325369672.pptx",
       "type": "learner",
-      "original": "learner/AI in MSword.pptx",
-      "uploadedAt": "2025-07-24T06:46:45.960631Z"
-    },
-    {
-      "title": "Applying for benefits online- PWD",
-      "filename": "Applying for benefits online- PWD-1753319805960.pptx",
-      "type": "learner",
-      "original": "learner/Applying for benefits online- PWD.pptx",
-      "uploadedAt": "2025-07-24T06:46:45.960631Z"
-    },
-    {
-      "title": "Applying for benefits- PWD",
-      "filename": "Applying for benefits- PWD-1753319805960.pptx",
-      "type": "learner",
-      "original": "learner/Applying for benefits- PWD.pptx",
-      "uploadedAt": "2025-07-24T06:46:45.960631Z"
-    },
-    {
-      "title": "Banking",
-      "filename": "Banking-1753319805960.pptx",
-      "type": "learner",
-      "original": "learner/Banking.pptx",
-      "uploadedAt": "2025-07-24T06:46:45.960631Z"
-    },
-    {
-      "title": "Basic Computer Skills",
-      "filename": "Basic Computer Skills-1753319805960.pptx",
-      "type": "learner",
-      "original": "learner/Basic Computer Skills.pptx",
-      "uploadedAt": "2025-07-24T06:46:45.960631Z"
-    },
-    {
-      "title": "Budgeting",
-      "filename": "Budgeting-1753319805960.pptx",
-      "type": "learner",
-      "original": "learner/Budgeting.pptx",
-      "uploadedAt": "2025-07-24T06:46:45.960631Z"
+      "original": "learner/AI/AI in MSword.pptx",
+      "category": "AI",
+      "uploadedAt": "2025-07-24T08:19:29.672751Z"
     },
     {
       "title": "Chat-GPT",
-      "filename": "Chat-GPT-1753319805960.pptx",
+      "filename": "Chat-GPT-1753325369672.pptx",
       "type": "learner",
-      "original": "learner/Chat-GPT.pptx",
-      "uploadedAt": "2025-07-24T06:46:45.960631Z"
-    },
-    {
-      "title": "COMMON  ACCESSIBILITY FEATURES_",
-      "filename": "COMMON  ACCESSIBILITY FEATURES_-1753319805960.pptx",
-      "type": "learner",
-      "original": "learner/COMMON  ACCESSIBILITY FEATURES_.pptx",
-      "uploadedAt": "2025-07-24T06:46:45.960631Z"
-    },
-    {
-      "title": "Cyber Bullying",
-      "filename": "Cyber Bullying-1753319805960.pptx",
-      "type": "learner",
-      "original": "learner/Cyber Bullying.pptx",
-      "uploadedAt": "2025-07-24T06:46:45.960631Z"
+      "original": "learner/AI/Chat-GPT.pptx",
+      "category": "AI",
+      "uploadedAt": "2025-07-24T08:19:29.672751Z"
     },
     {
       "title": "Deep Learning",
-      "filename": "Deep Learning-1753319805960.pptx",
+      "filename": "Deep Learning-1753325369672.pptx",
       "type": "learner",
-      "original": "learner/Deep Learning.pptx",
-      "uploadedAt": "2025-07-24T06:46:45.960631Z"
-    },
-    {
-      "title": "Digital Ettiquette",
-      "filename": "Digital Ettiquette-1753319805960.pptx",
-      "type": "learner",
-      "original": "learner/Digital Ettiquette.pptx",
-      "uploadedAt": "2025-07-24T06:46:45.960631Z"
-    },
-    {
-      "title": "Digital Payments",
-      "filename": "Digital Payments-1753319805960.pptx",
-      "type": "learner",
-      "original": "learner/Digital Payments.pptx",
-      "uploadedAt": "2025-07-24T06:46:45.960631Z"
-    },
-    {
-      "title": "DL- contd",
-      "filename": "DL- contd-1753319805960.pptx",
-      "type": "learner",
-      "original": "learner/DL- contd.pptx",
-      "uploadedAt": "2025-07-24T06:46:45.960631Z"
-    },
-    {
-      "title": "DL- contd_",
-      "filename": "DL- contd_-1753319805960.pptx",
-      "type": "learner",
-      "original": "learner/DL- contd_.pptx",
-      "uploadedAt": "2025-07-24T06:46:45.960631Z"
+      "original": "learner/AI/Deep Learning.pptx",
+      "category": "AI",
+      "uploadedAt": "2025-07-24T08:19:29.672751Z"
     },
     {
       "title": "Emails using AI",
-      "filename": "Emails using AI-1753319805960.pptx",
+      "filename": "Emails using AI-1753325369672.pptx",
       "type": "learner",
-      "original": "learner/Emails using AI.pptx",
-      "uploadedAt": "2025-07-24T06:46:45.960631Z"
-    },
-    {
-      "title": "Emails",
-      "filename": "Emails-1753319805960.pptx",
-      "type": "learner",
-      "original": "learner/Emails.pptx",
-      "uploadedAt": "2025-07-24T06:46:45.960631Z"
-    },
-    {
-      "title": "Expenses",
-      "filename": "Expenses-1753319805961.pptx",
-      "type": "learner",
-      "original": "learner/Expenses.pptx",
-      "uploadedAt": "2025-07-24T06:46:45.961689Z"
-    },
-    {
-      "title": "File Management - contd",
-      "filename": "File Management - contd-1753319805961.pptx",
-      "type": "learner",
-      "original": "learner/File Management - contd.pptx",
-      "uploadedAt": "2025-07-24T06:46:45.961689Z"
-    },
-    {
-      "title": "File Management- contd",
-      "filename": "File Management- contd-1753319805961.pptx",
-      "type": "learner",
-      "original": "learner/File Management- contd.pptx",
-      "uploadedAt": "2025-07-24T06:46:45.961689Z"
-    },
-    {
-      "title": "File Management",
-      "filename": "File Management-1753319805961.pptx",
-      "type": "learner",
-      "original": "learner/File Management.pptx",
-      "uploadedAt": "2025-07-24T06:46:45.961689Z"
-    },
-    {
-      "title": "FL- intro",
-      "filename": "FL- intro-1753319805961.pptx",
-      "type": "learner",
-      "original": "learner/FL- intro.pptx",
-      "uploadedAt": "2025-07-24T06:46:45.961689Z"
-    },
-    {
-      "title": "FL- Vocabulary",
-      "filename": "FL- Vocabulary-1753319805961.pptx",
-      "type": "learner",
-      "original": "learner/FL- Vocabulary.pptx",
-      "uploadedAt": "2025-07-24T06:46:45.961689Z"
-    },
-    {
-      "title": "Google Cloud",
-      "filename": "Google Cloud-1753319805961.pptx",
-      "type": "learner",
-      "original": "learner/Google Cloud.pptx",
-      "uploadedAt": "2025-07-24T06:46:45.961689Z"
-    },
-    {
-      "title": "Google Docs",
-      "filename": "Google Docs-1753319805961.pptx",
-      "type": "learner",
-      "original": "learner/Google Docs.pptx",
-      "uploadedAt": "2025-07-24T06:46:45.961689Z"
-    },
-    {
-      "title": "Google Sheets",
-      "filename": "Google Sheets-1753319805961.pptx",
-      "type": "learner",
-      "original": "learner/Google Sheets.pptx",
-      "uploadedAt": "2025-07-24T06:46:45.961689Z"
-    },
-    {
-      "title": "How to avoid Scams",
-      "filename": "How to avoid Scams-1753319805961.pptx",
-      "type": "learner",
-      "original": "learner/How to avoid Scams.pptx",
-      "uploadedAt": "2025-07-24T06:46:45.961689Z"
-    },
-    {
-      "title": "How to report Scams",
-      "filename": "How to report Scams-1753319805961.pptx",
-      "type": "learner",
-      "original": "learner/How to report Scams.pptx",
-      "uploadedAt": "2025-07-24T06:46:45.961689Z"
-    },
-    {
-      "title": "Income",
-      "filename": "Income-1753319805961.pptx",
-      "type": "learner",
-      "original": "learner/Income.pptx",
-      "uploadedAt": "2025-07-24T06:46:45.961689Z"
+      "original": "learner/AI/Emails using AI.pptx",
+      "category": "AI",
+      "uploadedAt": "2025-07-24T08:19:29.672751Z"
     },
     {
       "title": "Intro to AI",
-      "filename": "Intro to AI-1753319805961.pptx",
+      "filename": "Intro to AI-1753325369672.pptx",
       "type": "learner",
-      "original": "learner/Intro to AI.pptx",
-      "uploadedAt": "2025-07-24T06:46:45.961689Z"
+      "original": "learner/AI/Intro to AI.pptx",
+      "category": "AI",
+      "uploadedAt": "2025-07-24T08:19:29.672751Z"
     },
     {
       "title": "Machine Learning",
-      "filename": "Machine Learning-1753319805961.pptx",
+      "filename": "Machine Learning-1753325369672.pptx",
       "type": "learner",
-      "original": "learner/Machine Learning.pptx",
-      "uploadedAt": "2025-07-24T06:46:45.961689Z"
-    },
-    {
-      "title": "Microsoft Excel",
-      "filename": "Microsoft Excel-1753319805961.pptx",
-      "type": "learner",
-      "original": "learner/Microsoft Excel.pptx",
-      "uploadedAt": "2025-07-24T06:46:45.961689Z"
-    },
-    {
-      "title": "Microsoft PPT",
-      "filename": "Microsoft PPT-1753319805961.pptx",
-      "type": "learner",
-      "original": "learner/Microsoft PPT.pptx",
-      "uploadedAt": "2025-07-24T06:46:45.961689Z"
-    },
-    {
-      "title": "Microsoft Word",
-      "filename": "Microsoft Word-1753319805961.pptx",
-      "type": "learner",
-      "original": "learner/Microsoft Word.pptx",
-      "uploadedAt": "2025-07-24T06:46:45.961689Z"
+      "original": "learner/AI/Machine Learning.pptx",
+      "category": "AI",
+      "uploadedAt": "2025-07-24T08:19:29.672751Z"
     },
     {
       "title": "NLP",
-      "filename": "NLP-1753319805961.pptx",
+      "filename": "NLP-1753325369672.pptx",
       "type": "learner",
-      "original": "learner/NLP.pptx",
-      "uploadedAt": "2025-07-24T06:46:45.961689Z"
+      "original": "learner/AI/NLP.pptx",
+      "category": "AI",
+      "uploadedAt": "2025-07-24T08:19:29.672751Z"
     },
     {
-      "title": "Online shopping",
-      "filename": "Online shopping-1753319805961.pptx",
+      "title": "Basic Computer Skills",
+      "filename": "Basic Computer Skills-1753325406099.pptx",
       "type": "learner",
-      "original": "learner/Online shopping.pptx",
-      "uploadedAt": "2025-07-24T06:46:45.961689Z"
+      "original": "learner/Computer Skills/Basic Computer Skills.pptx",
+      "category": "CS",
+      "uploadedAt": "2025-07-24T08:20:06.099992Z"
     },
     {
-      "title": "Responsible Online behavior",
-      "filename": "Responsible Online behavior-1753319805961.pptx",
+      "title": "COMMON  ACCESSIBILITY FEATURES_",
+      "filename": "COMMON  ACCESSIBILITY FEATURES_-1753325406099.pptx",
       "type": "learner",
-      "original": "learner/Responsible Online behavior.pptx",
-      "uploadedAt": "2025-07-24T06:46:45.961689Z"
+      "original": "learner/Computer Skills/COMMON  ACCESSIBILITY FEATURES_.pptx",
+      "category": "CS",
+      "uploadedAt": "2025-07-24T08:20:06.099992Z"
     },
     {
-      "title": "Safe Online Communication",
-      "filename": "Safe Online Communication-1753319805961.pptx",
+      "title": "Emails",
+      "filename": "Emails-1753325406099.pptx",
       "type": "learner",
-      "original": "learner/Safe Online Communication.pptx",
-      "uploadedAt": "2025-07-24T06:46:45.961689Z"
+      "original": "learner/Computer Skills/Emails.pptx",
+      "category": "CS",
+      "uploadedAt": "2025-07-24T08:20:06.099992Z"
     },
     {
-      "title": "Savings",
-      "filename": "Savings-1753319805961.pptx",
+      "title": "File Management - contd",
+      "filename": "File Management - contd-1753325406099.pptx",
       "type": "learner",
-      "original": "learner/Savings.pptx",
-      "uploadedAt": "2025-07-24T06:46:45.961689Z"
+      "original": "learner/Computer Skills/File Management - contd.pptx",
+      "category": "CS",
+      "uploadedAt": "2025-07-24T08:20:06.099992Z"
     },
     {
-      "title": "UDID",
-      "filename": "UDID-1753319805961.pptx",
+      "title": "File Management- contd",
+      "filename": "File Management- contd-1753325406099.pptx",
       "type": "learner",
-      "original": "learner/UDID.pptx",
-      "uploadedAt": "2025-07-24T06:46:45.961689Z"
+      "original": "learner/Computer Skills/File Management- contd.pptx",
+      "category": "CS",
+      "uploadedAt": "2025-07-24T08:20:06.099992Z"
+    },
+    {
+      "title": "File Management",
+      "filename": "File Management-1753325406099.pptx",
+      "type": "learner",
+      "original": "learner/Computer Skills/File Management.pptx",
+      "category": "CS",
+      "uploadedAt": "2025-07-24T08:20:06.099992Z"
+    },
+    {
+      "title": "Google Cloud",
+      "filename": "Google Cloud-1753325406099.pptx",
+      "type": "learner",
+      "original": "learner/Computer Skills/Google Cloud.pptx",
+      "category": "CS",
+      "uploadedAt": "2025-07-24T08:20:06.099992Z"
+    },
+    {
+      "title": "Google Docs",
+      "filename": "Google Docs-1753325406099.pptx",
+      "type": "learner",
+      "original": "learner/Computer Skills/Google Docs.pptx",
+      "category": "CS",
+      "uploadedAt": "2025-07-24T08:20:06.099992Z"
+    },
+    {
+      "title": "Google Sheets",
+      "filename": "Google Sheets-1753325406099.pptx",
+      "type": "learner",
+      "original": "learner/Computer Skills/Google Sheets.pptx",
+      "category": "CS",
+      "uploadedAt": "2025-07-24T08:20:06.099992Z"
+    },
+    {
+      "title": "Microsoft Excel",
+      "filename": "Microsoft Excel-1753325406099.pptx",
+      "type": "learner",
+      "original": "learner/Computer Skills/Microsoft Excel.pptx",
+      "category": "CS",
+      "uploadedAt": "2025-07-24T08:20:06.099992Z"
+    },
+    {
+      "title": "Microsoft PPT",
+      "filename": "Microsoft PPT-1753325406099.pptx",
+      "type": "learner",
+      "original": "learner/Computer Skills/Microsoft PPT.pptx",
+      "category": "CS",
+      "uploadedAt": "2025-07-24T08:20:06.099992Z"
+    },
+    {
+      "title": "Microsoft Word",
+      "filename": "Microsoft Word-1753325406099.pptx",
+      "type": "learner",
+      "original": "learner/Computer Skills/Microsoft Word.pptx",
+      "category": "CS",
+      "uploadedAt": "2025-07-24T08:20:06.099992Z"
     },
     {
       "title": "Web Browsing",
-      "filename": "Web Browsing-1753319805962.pptx",
+      "filename": "Web Browsing-1753325406099.pptx",
       "type": "learner",
-      "original": "learner/Web Browsing.pptx",
-      "uploadedAt": "2025-07-24T06:46:45.962636Z"
+      "original": "learner/Computer Skills/Web Browsing.pptx",
+      "category": "CS",
+      "uploadedAt": "2025-07-24T08:20:06.099992Z"
+    },
+    {
+      "title": "Accessible Job Platforms",
+      "filename": "Accessible Job Platforms-1753325425892.pptx",
+      "type": "learner",
+      "original": "learner/Digital Literacy/Accessible Job Platforms.pptx",
+      "category": "DL",
+      "uploadedAt": "2025-07-24T08:20:25.892124Z"
+    },
+    {
+      "title": "Accessing govt services for PWD",
+      "filename": "Accessing govt services for PWD-1753325425892.pptx",
+      "type": "learner",
+      "original": "learner/Digital Literacy/Accessing govt services for PWD.pptx",
+      "category": "DL",
+      "uploadedAt": "2025-07-24T08:20:25.892124Z"
+    },
+    {
+      "title": "Applying for benefits online- PWD",
+      "filename": "Applying for benefits online- PWD-1753325425892.pptx",
+      "type": "learner",
+      "original": "learner/Digital Literacy/Applying for benefits online- PWD.pptx",
+      "category": "DL",
+      "uploadedAt": "2025-07-24T08:20:25.892124Z"
+    },
+    {
+      "title": "Applying for benefits- PWD",
+      "filename": "Applying for benefits- PWD-1753325425892.pptx",
+      "type": "learner",
+      "original": "learner/Digital Literacy/Applying for benefits- PWD.pptx",
+      "category": "DL",
+      "uploadedAt": "2025-07-24T08:20:25.892124Z"
+    },
+    {
+      "title": "Corporate Vocabulary",
+      "filename": "Corporate Vocabulary-1753325425892.pptx",
+      "type": "learner",
+      "original": "learner/Digital Literacy/Corporate Vocabulary.pptx",
+      "category": "DL",
+      "uploadedAt": "2025-07-24T08:20:25.892124Z"
+    },
+    {
+      "title": "Cyber Bullying",
+      "filename": "Cyber Bullying-1753325425892.pptx",
+      "type": "learner",
+      "original": "learner/Digital Literacy/Cyber Bullying.pptx",
+      "category": "DL",
+      "uploadedAt": "2025-07-24T08:20:25.892124Z"
+    },
+    {
+      "title": "Digital Ettiquette",
+      "filename": "Digital Ettiquette-1753325425892.pptx",
+      "type": "learner",
+      "original": "learner/Digital Literacy/Digital Ettiquette.pptx",
+      "category": "DL",
+      "uploadedAt": "2025-07-24T08:20:25.892124Z"
+    },
+    {
+      "title": "Digital literacy- intro",
+      "filename": "Digital literacy- intro-1753325425892.pptx",
+      "type": "learner",
+      "original": "learner/Digital Literacy/Digital literacy- intro.pptx",
+      "category": "DL",
+      "uploadedAt": "2025-07-24T08:20:25.892124Z"
+    },
+    {
+      "title": "DL- contd",
+      "filename": "DL- contd-1753325425892.pptx",
+      "type": "learner",
+      "original": "learner/Digital Literacy/DL- contd.pptx",
+      "category": "DL",
+      "uploadedAt": "2025-07-24T08:20:25.892124Z"
+    },
+    {
+      "title": "DL- contd_",
+      "filename": "DL- contd_-1753325425892.pptx",
+      "type": "learner",
+      "original": "learner/Digital Literacy/DL- contd_.pptx",
+      "category": "DL",
+      "uploadedAt": "2025-07-24T08:20:25.892124Z"
+    },
+    {
+      "title": "How to avoid Scams",
+      "filename": "How to avoid Scams-1753325425892.pptx",
+      "type": "learner",
+      "original": "learner/Digital Literacy/How to avoid Scams.pptx",
+      "category": "DL",
+      "uploadedAt": "2025-07-24T08:20:25.892124Z"
+    },
+    {
+      "title": "How to report Scams",
+      "filename": "How to report Scams-1753325425892.pptx",
+      "type": "learner",
+      "original": "learner/Digital Literacy/How to report Scams.pptx",
+      "category": "DL",
+      "uploadedAt": "2025-07-24T08:20:25.892124Z"
+    },
+    {
+      "title": "Online shopping",
+      "filename": "Online shopping-1753325425892.pptx",
+      "type": "learner",
+      "original": "learner/Digital Literacy/Online shopping.pptx",
+      "category": "DL",
+      "uploadedAt": "2025-07-24T08:20:25.892124Z"
+    },
+    {
+      "title": "Responsible Online behavior",
+      "filename": "Responsible Online behavior-1753325425892.pptx",
+      "type": "learner",
+      "original": "learner/Digital Literacy/Responsible Online behavior.pptx",
+      "category": "DL",
+      "uploadedAt": "2025-07-24T08:20:25.892124Z"
+    },
+    {
+      "title": "Safe Online Communication",
+      "filename": "Safe Online Communication-1753325425892.pptx",
+      "type": "learner",
+      "original": "learner/Digital Literacy/Safe Online Communication.pptx",
+      "category": "DL",
+      "uploadedAt": "2025-07-24T08:20:25.892124Z"
+    },
+    {
+      "title": "UDID",
+      "filename": "UDID-1753325425892.pptx",
+      "type": "learner",
+      "original": "learner/Digital Literacy/UDID.pptx",
+      "category": "DL",
+      "uploadedAt": "2025-07-24T08:20:25.892124Z"
+    },
+    {
+      "title": "Banking",
+      "filename": "Banking-1753325440593.pptx",
+      "type": "learner",
+      "original": "learner/Financial Literacy/Banking.pptx",
+      "category": "FL",
+      "uploadedAt": "2025-07-24T08:20:40.593985Z"
+    },
+    {
+      "title": "Budgeting",
+      "filename": "Budgeting-1753325440593.pptx",
+      "type": "learner",
+      "original": "learner/Financial Literacy/Budgeting.pptx",
+      "category": "FL",
+      "uploadedAt": "2025-07-24T08:20:40.593985Z"
+    },
+    {
+      "title": "Digital Payments",
+      "filename": "Digital Payments-1753325440593.pptx",
+      "type": "learner",
+      "original": "learner/Financial Literacy/Digital Payments.pptx",
+      "category": "FL",
+      "uploadedAt": "2025-07-24T08:20:40.593985Z"
+    },
+    {
+      "title": "Expenses",
+      "filename": "Expenses-1753325440593.pptx",
+      "type": "learner",
+      "original": "learner/Financial Literacy/Expenses.pptx",
+      "category": "FL",
+      "uploadedAt": "2025-07-24T08:20:40.593985Z"
+    },
+    {
+      "title": "FL- intro",
+      "filename": "FL- intro-1753325440593.pptx",
+      "type": "learner",
+      "original": "learner/Financial Literacy/FL- intro.pptx",
+      "category": "FL",
+      "uploadedAt": "2025-07-24T08:20:40.593985Z"
+    },
+    {
+      "title": "FL- Vocabulary",
+      "filename": "FL- Vocabulary-1753325440593.pptx",
+      "type": "learner",
+      "original": "learner/Financial Literacy/FL- Vocabulary.pptx",
+      "category": "FL",
+      "uploadedAt": "2025-07-24T08:20:40.593985Z"
+    },
+    {
+      "title": "Income",
+      "filename": "Income-1753325440593.pptx",
+      "type": "learner",
+      "original": "learner/Financial Literacy/Income.pptx",
+      "category": "FL",
+      "uploadedAt": "2025-07-24T08:20:40.593985Z"
+    },
+    {
+      "title": "Savings",
+      "filename": "Savings-1753325440593.pptx",
+      "type": "learner",
+      "original": "learner/Financial Literacy/Savings.pptx",
+      "category": "FL",
+      "uploadedAt": "2025-07-24T08:20:40.593985Z"
     }
   ]
 }

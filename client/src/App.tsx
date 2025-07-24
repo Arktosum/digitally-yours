@@ -10,6 +10,7 @@ import CoursesPage from "./pages/CoursesPage";
 import AboutUs from "./pages/AboutUs";
 import MentorViewAll from "./pages/MentorViewAll";
 import CoursesViewAll from "./pages/CoursesViewAll";
+import CoursesViewAllCategory from "./pages/CoursesViewAllCategory";
 export default function App() {
   const [sideOpen, setSideOpen] = useState(false);
   return (
@@ -24,6 +25,7 @@ export default function App() {
           <Route path="/mentor" element={<MentorPage />} />
           <Route path="/mentor/view_all" element={<MentorViewAll />} />
           <Route path="/courses/view_all" element={<CoursesViewAll />} />
+          <Route path="/courses/view_all_category/:category" element={<CoursesViewAllCategory />} />
           <Route path="/mentor/upload" element={<MentorUploadPage />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>

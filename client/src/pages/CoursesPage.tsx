@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import Footer from "../components/Footer";
-import CourseCard from "../components/CourseCard";
 import { useNavigate } from "react-router-dom";
 
 interface Course {
@@ -28,6 +27,16 @@ const CoursesPage: React.FC = () => {
       new RegExp(searchCourse, "i").test(item.title) && item.type == "learner"
   );
 
+  const courseCategories: { title: string; url: string }[] = [
+    {
+      title: "Flip Book",
+      url: "https://heyzine.com/flip-book/15a1ea322c.html",
+    },
+    { title: "AI", url: "AI" },
+    { title: "Computer Skills", url: "CS" },
+    { title: "Digital Literacy", url: "DL" },
+    { title: "Financial Literacy", url: "FL" },
+  ];
   return (
     <div className="min-h-screen flex flex-col ">
       <main className="flex-1">
@@ -67,19 +76,20 @@ const CoursesPage: React.FC = () => {
           />
         </div>
 
-
         <div className="flex justify-end mx-5">
-          <div onClick={()=>{
-            navigate('/courses/view_all');
-          }}
-          className="bg-[#ECE6F0] px-10 py-3 w-fit my-10 self-center text-black flex justify-center items-center gap-5 rounded-full">
+          <div
+            onClick={() => {
+              navigate("/courses/view_all");
+            }}
+            className="bg-[#ECE6F0] px-10 py-3 w-fit my-10 self-center text-black flex justify-center items-center gap-5 rounded-full"
+          >
             View All
           </div>
         </div>
 
         <div className="flex flex-col gap-5 my-10">
-          {filteredCourses.map((course) => {
-            if (course.filename == "flip_book") {
+          {courseCategories.map((course) => {
+            if (course.title == "Flip Book") {
               return (
                 <div className="p-5 m-5 bg-[#FBF4F7] font-inter border-[1px] border-gray-600 rounded-xl shadow-lg">
                   <h3 className="text-lg font-bold mb-10 text-center">
@@ -95,7 +105,7 @@ const CoursesPage: React.FC = () => {
                     <button
                       className="flex-1 bg-[#ECE6F0] text-black py-2 rounded border-1 border-gray-300"
                       onClick={() => {
-                        window.location.href = course.original;
+                        window.location.href = course.url;
                       }}
                     >
                       Explore
@@ -105,19 +115,27 @@ const CoursesPage: React.FC = () => {
               );
             } else {
               return (
-                <CourseCard
-                  key={course.original}
-                  title={course.title}
-                  onDownload={() => {
-                    const link = document.createElement("a");
-                    link.href = `http://localhost:4000/uploads/${course.original}`; // must be accessible
-                    link.download = course.original;
-                    link.target = "_blank"; // optional
-                    document.body.appendChild(link);
-                    link.click();
-                    document.body.removeChild(link);
-                  }}
-                />
+                <div className="p-5 m-5 bg-[#FBF4F7] font-inter border-[1px] border-gray-600 rounded-xl shadow-lg">
+                  <h3 className="text-lg font-bold mb-10 text-center">
+                    {course.title}
+                  </h3>
+                  <div className="flex relative flex-col gap-5">
+                    <img
+                      src="search_icon.svg"
+                      alt="icon"
+                      className="pointer-events-none absolute left-[66%] top-1/2 w-5 h-5 transform -translate-y-1/2 text-gray-400"
+                    />
+
+                    <button
+                      className="flex-1 bg-[#ECE6F0] text-black py-2 rounded border-1 border-gray-300"
+                      onClick={() => {
+                        navigate(`/courses/view_all_category/${course.url}`);
+                      }}
+                    >
+                      Explore
+                    </button>
+                  </div>
+                </div>
               );
             }
           })}

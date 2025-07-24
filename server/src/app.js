@@ -88,7 +88,6 @@ app.get('/mentor/uploads', (req, res) => {
         console.error('Invalid metadata.json', err);
         return res.status(500).json({ error: 'Failed to read metadata' });
     }
-    console.log(data.uploads);
     const enriched = data.uploads.map((entry) => (Object.assign(Object.assign({}, entry), { url: `${req.protocol}://${req.get('host')}/uploads/${encodeURIComponent(entry.filename)}` })));
     res.json({ uploads: enriched });
 });
