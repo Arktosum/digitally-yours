@@ -38,14 +38,14 @@ const CoursesPage: React.FC = () => {
     { title: "Financial Literacy", url: "FL" },
   ];
   return (
-    <div className="min-h-screen flex flex-col ">
+    <div className="min-h-screen flex flex-col">
       <main className="flex-1">
-        <h1 className="text-2xl font-inter font-semibold my-10 px-4">
+        <h1 className="text-2xl font-inter font-semibold my-1 mb-6 px-4">
           Welcome, Learner!
         </h1>
         <div className="bg-[#FBF4F7] p-5 flex  flex-col items-center">
-          <p className="font-medium mb-4 text-xl">
-            <span className="text-[#FFA500] font-extrabold">
+          <p className="font-bold mb-4 text-xl  text-center">
+            <span className="text-[#FFA500] font-bold">
               Because Learning has no limits —{" "}
             </span>{" "}
             and neither should access to it.
@@ -55,7 +55,7 @@ const CoursesPage: React.FC = () => {
             <span>confidence step by step.</span>
           </p>
         </div>
-        <p className="my-15 px-2 text-md font-bold font-inter text-center">
+        <p className="my-6 mt-10 px-2 text-md font-bold font-inter text-center">
           Hello! What Do you want to Learn Today?
         </p>
         <div className="px-2 mx-2 relative flex justify-between">
@@ -75,19 +75,17 @@ const CoursesPage: React.FC = () => {
             }}
           />
         </div>
-
-        <div className="flex justify-end mx-5">
+        <div className="px-2 flex justify-end mx-2 text-sm mt-10 mb-5">
           <div
             onClick={() => {
               navigate("/courses/view_all");
             }}
-            className="bg-[#ECE6F0] px-10 py-3 w-fit my-10 self-center text-black flex justify-center items-center gap-5 rounded-full"
+            className="bg-[#ECE6F0] px-4 py-2 w-fit self-center text-black flex justify-center items-center gap-5 rounded-full"
           >
             View All
           </div>
         </div>
-
-        <div className="flex flex-col gap-5 my-10">
+        <div className="flex flex-col gap-5 my-5">
           {courseCategories.map((course) => {
             if (course.title == "Flip Book") {
               return (
@@ -96,19 +94,13 @@ const CoursesPage: React.FC = () => {
                     {course.title}
                   </h3>
                   <div className="flex relative flex-col gap-5">
-                    <img
-                      src="search_icon.svg"
-                      alt="icon"
-                      className="pointer-events-none absolute left-[66%] top-1/2 w-5 h-5 transform -translate-y-1/2 text-gray-400"
-                    />
-
                     <button
                       className="flex-1 bg-[#ECE6F0] text-black py-2 rounded border-1 border-gray-300"
                       onClick={() => {
                         window.location.href = course.url;
                       }}
                     >
-                      Explore
+                      View
                     </button>
                   </div>
                 </div>
@@ -120,19 +112,13 @@ const CoursesPage: React.FC = () => {
                     {course.title}
                   </h3>
                   <div className="flex relative flex-col gap-5">
-                    <img
-                      src="search_icon.svg"
-                      alt="icon"
-                      className="pointer-events-none absolute left-[66%] top-1/2 w-5 h-5 transform -translate-y-1/2 text-gray-400"
-                    />
-
                     <button
                       className="flex-1 bg-[#ECE6F0] text-black py-2 rounded border-1 border-gray-300"
                       onClick={() => {
                         navigate(`/courses/view_all_category/${course.url}`);
                       }}
                     >
-                      Explore
+                      View
                     </button>
                   </div>
                 </div>

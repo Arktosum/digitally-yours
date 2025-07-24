@@ -1,7 +1,7 @@
 import React from "react";
 
 const Footer: React.FC = () => (
-  <footer className="w-full px-4 py-6 bg-[#F5F5F5] text-center text-sm text-gray-500">
+  <footer className="w-full px-4 py-6 mt-5 bg-[#F5F5F5] text-center text-sm text-gray-500">
     <img
       src="/brand-logo.png"
       alt="Digitally Yours"

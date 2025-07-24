@@ -30,14 +30,14 @@ const CoursePage: React.FC = () => {
   );
 
   return (
-    <div className="min-h-screen flex flex-col ">
+    <div className="min-h-screen flex flex-col">
       <main className="flex-1">
-        <h1 className="text-2xl font-inter font-semibold my-10 px-4">
+        <h1 className="text-2xl font-inter font-semibold my-1 mb-6 px-4">
           Welcome, Mentor!
         </h1>
-        <div className="bg-[#FBF4F7] p-5 flex  flex-col items-center">
-          <p className="font-medium mb-4 text-xl">
-            <span className="text-[#FFA500] font-extrabold">
+        <div className="bg-[#FBF4F7] p-5 flex flex-col items-center">
+          <p className="font-bold mb-4 text-xl  text-center">
+            <span className="text-[#FFA500] font-bold">
               Because Learning has no limits —{" "}
             </span>{" "}
             and neither should access to it.
@@ -47,7 +47,7 @@ const CoursePage: React.FC = () => {
             <span>confidence step by step.</span>
           </p>
         </div>
-        <p className="my-15 px-2 text-md font-bold font-inter text-center">
+        <p className="my-6 mt-10 px-2 text-md font-bold font-inter text-center">
           Hello! What Do you want to Teach Today?
         </p>
         <div className="px-2 mx-2 relative flex justify-between">
@@ -67,12 +67,12 @@ const CoursePage: React.FC = () => {
             }}
           />
         </div>
-        <div className="flex justify-between mx-2 text-sm">
+        <div className="px-2 flex justify-between mx-2 text-sm mt-10 mb-5">
           <div
             onClick={() => {
               navigate("/mentor/upload");
             }}
-            className="bg-[#ECE6F0] px-4 py-2 w-fit my-10 self-center text-black flex justify-center items-center gap-5 rounded-full"
+            className="bg-[#ECE6F0] px-4 py-2 w-fit self-center text-black flex justify-center items-center gap-2 rounded-full"
           >
             Upload Course
             <span>
@@ -93,13 +93,12 @@ const CoursePage: React.FC = () => {
             onClick={() => {
               navigate("/mentor/view_all");
             }}
-            className="bg-[#ECE6F0] px-4 py-2 w-fit my-10 self-center text-black flex justify-center items-center gap-5 rounded-full"
+            className="bg-[#ECE6F0] px-4 py-2 w-fit self-center text-black flex justify-center items-center gap-5 rounded-full"
           >
             View All
           </div>
         </div>
-
-        <div className="flex flex-col gap-5 my-10">
+        <div className="flex flex-col">
           {filteredCourses.map((course) => (
             <CourseCard
               key={course.original}

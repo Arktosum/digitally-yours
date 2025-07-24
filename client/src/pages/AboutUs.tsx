@@ -4,19 +4,18 @@ export default function AboutUs() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center">
       <main className="flex-1 p-4">
-        <h1 className="text-xl font-semibold mb-4">About Us</h1>
+        <h1 className="text-2xl font-semibold mb-2">About Us</h1>
         <div className="flex justify-center items-center">
-          <div className=" w-48 h-48 rounded-full overflow-hidden ">
+          <div className="w-48 h-48 rounded-full overflow-hidden shadow-[20px_9px_20px_-10px_rgba(0,0,0,0.9)] border-1">
             <img
               src="/about_us.png"
               alt=""
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover object-bottom"
             />
           </div>
         </div>
-
-        <div className="flex flex-col gap-5 my-10  text-sm font-inter">
-          <div>Hi, I’m Janvi .</div>
+        <div className="flex flex-col gap-5 my-5 text-sm font-inter">
+          <div>Hi, I'm Janvi .</div>
           <div>
             This project began with a simple but powerful goal: to make digital
             literacy accessible for everyone, especially people with

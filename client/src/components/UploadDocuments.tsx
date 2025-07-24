@@ -44,10 +44,10 @@ const UploadDocuments: React.FC<UploadDocumentsProps> = ({ onUpload }) => {
   const openFileDialog = () => inputRef.current?.click();
 
   return (
-    <div className="bg-white font-inter rounded shadow p-4 space-y-4 border-[1px] border-gray-300">
-      <h2 className="text-lg font-medium">Upload Documents</h2>
+    <div className="bg-white font-inter rounded shadow-lg mb-9 p-4 space-y-4 border-[1px] border-gray-300">
+      <h2 className="text-lg font-medium text-center">Upload Documents</h2>
       <hr className="text-gray-300" />
-      <label className="block text-md font-semibold">
+      <label className="block text-md">
         Title
         <input
           type="text"
@@ -91,7 +91,12 @@ const UploadDocuments: React.FC<UploadDocumentsProps> = ({ onUpload }) => {
                 </p>
                 <ul className="">
                   {files.map((f, i) => (
-                    <li className="text-[0.9rem] w-full overflow-clip text-ellipsis" key={i}>{f.name}</li>
+                    <li
+                      className="text-[0.9rem] w-full overflow-clip text-ellipsis"
+                      key={i}
+                    >
+                      {f.name}
+                    </li>
                   ))}
                 </ul>
               </div>
@@ -109,7 +114,7 @@ const UploadDocuments: React.FC<UploadDocumentsProps> = ({ onUpload }) => {
         </div>
       </div>
 
-      <div className="text-[#A5A4AC] text-sm my-5">
+      <div className="text-[#A5A4AC] text-sm my-8">
         Accepted File Types : .pdf and .docx only
       </div>
       <button
@@ -119,10 +124,10 @@ const UploadDocuments: React.FC<UploadDocumentsProps> = ({ onUpload }) => {
       >
         Upload
       </button>
-      <div className="my-10 text-black bg-white border-[1px] border-[#D1D1D1] p-5 text-sm">
-        <b className="font-bold">Note:</b> Please upload only relevant course
-        material, notes, or resources that learners can view or download. Avoid
-        uploading personal files or unrelated content.
+      <div className="my-2 text-black bg-white p-2 text-sm text-center">
+        <b className="font-bold">Note:</b> Please upload only relevant
+        course material or resources that learners can download. Avoid uploading
+        personal files or unrelated content.
       </div>
     </div>
   );
