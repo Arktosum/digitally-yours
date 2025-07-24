@@ -1,53 +1,109 @@
-import React from "react";
-import HeroCard from "../components/HeroCard";
 import { useNavigate } from "react-router-dom";
 import Footer from "../components/Footer";
 
-const heart_svg = (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    fill="currentColor"
-    viewBox="0 0 24 24"
-    className="size-6"
-  >
-    <path
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
-    />
-  </svg>
-);
-
-const LandingPage: React.FC = () => {
+export default function LandingPage() {
   const navigate = useNavigate();
-
   return (
-    <div className="min-h-screen flex flex-col">
-      <main className="flex-1 px-4 py-6 flex flex-col items-center">
-        <img
-          src="/hero_image_transparent.png"
-          alt="Digital learning illustration"
-          className="w-full max-w-md mb-4"
-        />
-        <h1 className="text-xl font-poppins font-bold text-center">
-          Welcome to Digitally Yours!
-        </h1>
-        <div className="my-5 font-inter font-medium text-center text-orange-500 flex">
-          <p>Spreading Digital Literacy With </p>
-          <span className="">{heart_svg}</span>
+    <div className="min-h-screen flex flex-col items-center justify-center">
+      <main className="flex-1">
+        <div className="bg-[#FBF4F7] p-5 flex  flex-col items-center">
+          <p className="font-medium mb-4 text-xl">
+            <span className="text-[#FFA500] font-extrabold">
+              Because Learning has no limits —{" "}
+            </span>{" "}
+            and neither should access to it.
+          </p>
+          <p className="text-[#2E2E2E] text-sm font-inter mb-4 flex flex-col items-center">
+            <span>Explore easy lessons, hands-on tips, and build</span>
+            <span>confidence step by step.</span>
+          </p>
+
+          <button
+            className="w-full bg-[#FFA500] font-poppins font-bold text-sm  text-white py-3 rounded hover:bg-yellow-600"
+            onClick={() => {
+              navigate("/dashboard");
+            }}
+          >
+            Get Digitally Confident
+          </button>
         </div>
-        <HeroCard
-          onGuideClick={() => {
-            navigate("/mentor");
-          }}
-          onLearnClick={() => {
-            navigate("/courses");
-          }}
-        />
+        <div className="px-5 text-sm my-5 font-poppins flex flex-col justify-center items-center gap-5">
+          <div className="font-bold">Why Digital Literacy?</div>
+          <div>
+            Because in today’s world, being digitally literate is not a luxury
+            -it's a lifeline.
+          </div>
+        </div>
+
+        <div className="flex justify-center items-center">
+          <img src="/landing_hero.png" alt="" />
+        </div>
+
+        <div className="px-5 text-sm my-5 font-poppins text-center">
+          Yet, millions of people, especially those with disabilities are left
+          behind, not because they lack potential, but because they lack access
+          to inclusive learning tools and supportive systems that meet them
+          where they are.
+        </div>
+
+        <div className="px-5 text-xl font-bold font-poppins">
+          What We Offer?
+        </div>
+        <div className="my-10 flex flex-col justify-center items-center p-5">
+          <div className="font-poppins bg-[#CFE2F3] flex flex-col gap-5 p-5 rounded-xl">
+            <div className="font-bold text-center">
+              🌐 Bridging the Digital Divide
+            </div>
+            <div className="text-sm text-center">
+              Making digital literacy accessible to everyone, especially people
+              with disabilities, through inclusive content, tools, and training
+              that remove barriers to participation.
+            </div>
+          </div>
+        </div>
+
+        <div className="my-10 flex flex-col justify-center items-center p-5">
+          <div className="font-poppins bg-[#F1B57E] flex flex-col gap-5 p-5 rounded-xl">
+            <div className="font-bold text-center flex justify-center gap-2">
+              <img src="/idea.png" alt="" />
+              <div>Empowering Through Knowledge</div>
+            </div>
+            <div className="text-sm text-center">
+              Offering clear and simple modules on digital skills, financial
+              literacy, and AI awareness to help learners gain confidence,
+              independence, and real-world readiness.
+            </div>
+          </div>
+        </div>
+
+        <div className="my-10 flex flex-col justify-center items-center p-5">
+          <div className="font-poppins bg-[#FFEAC4] flex flex-col gap-5 p-5 rounded-xl">
+            <div className="font-bold text-center">
+              💬 Supporting Trainers & Communities
+            </div>
+            <div className="text-sm text-center">
+              Providing trainers with ready-to-use notes, activities, and
+              resources to ensure consistent, high-quality, and inclusive
+              learning experiences across all settings.
+            </div>
+          </div>
+        </div>
+
+        <div className="my-10 flex flex-col justify-center items-center p-5">
+          <div className="font-poppins bg-[#DFEEE4] flex flex-col gap-5 p-5 rounded-xl">
+            <div className="font-bold text-center flex justify-center gap-2">
+              <img src="/handshake.png" alt="" />
+              <div> Creating Lifelong Impact</div>
+            </div>
+            <div className="text-sm text-center">
+              Fostering meaningful, long-term change by enabling individuals to
+              access opportunities, make informed choices, and actively engage
+              in the digital world.
+            </div>
+          </div>
+        </div>
       </main>
       <Footer />
     </div>
   );
-};
-
-export default LandingPage;
+}

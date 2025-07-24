@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import LandingPage from "./pages/LandingPage";
 import MentorUploadPage from "./pages/MentorUploadPage";
 import Header from "./components/Header";
 import SideNav from "./components/SideNav";
@@ -11,6 +10,8 @@ import AboutUs from "./pages/AboutUs";
 import MentorViewAll from "./pages/MentorViewAll";
 import CoursesViewAll from "./pages/CoursesViewAll";
 import CoursesViewAllCategory from "./pages/CoursesViewAllCategory";
+import Dashboard from "./pages/Dashboard";
+import LandingPage from "./pages/LandingPage";
 export default function App() {
   const [sideOpen, setSideOpen] = useState(false);
   return (
@@ -20,6 +21,7 @@ export default function App() {
       <div className="mt-5">
         <Routes>
           <Route path="/" element={<LandingPage />} />
+          <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/courses" element={<CoursesPage />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/mentor" element={<MentorPage />} />

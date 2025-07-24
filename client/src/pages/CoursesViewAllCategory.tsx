@@ -18,7 +18,7 @@ export default function CoursesViewAllCategory() {
   const [courses, setCourses] = useState<Course[]>([]);
   const [searchCourse, setSearchCourse] = useState<string>("");
   useEffect(() => {
-    fetch("http://localhost:4000/mentor/uploads")
+    fetch("https://digitally-yours.onrender.com/mentor/uploads")
       .then((res) => res.json())
       .then((data) => {
         setCourses(data["uploads"]);
@@ -88,7 +88,7 @@ export default function CoursesViewAllCategory() {
                 title={course.title}
                 onDownload={() => {
                   const link = document.createElement("a");
-                  link.href = `http://localhost:4000/uploads/${course.original}`; // must be accessible
+                  link.href = `https://digitally-yours.onrender.com/uploads/${course.original}`; // must be accessible
                   link.download = course.original;
                   link.target = "_blank"; // optional
                   document.body.appendChild(link);

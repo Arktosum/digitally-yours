@@ -15,7 +15,7 @@ const CoursesPage: React.FC = () => {
   const [searchCourse, setSearchCourse] = useState<string>("");
   const navigate = useNavigate();
   useEffect(() => {
-    fetch("http://localhost:4000/mentor/uploads")
+    fetch("https://digitally-yours.onrender.com/mentor/uploads")
       .then((res) => res.json())
       .then((data) => {
         setCourses(data["uploads"]);
