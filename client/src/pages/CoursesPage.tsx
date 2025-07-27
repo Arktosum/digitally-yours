@@ -1,33 +1,14 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Footer from "../components/Footer";
 import { useNavigate } from "react-router-dom";
 
-interface Course {
-  filename: string;
-  original: string;
-  type: string;
-  title: string;
-  uploadedAt: Date;
-  url: string;
-}
+
 const CoursesPage: React.FC = () => {
-  const [courses, setCourses] = useState<Course[]>([]);
   const [searchCourse, setSearchCourse] = useState<string>("");
   const navigate = useNavigate();
-  useEffect(() => {
-    fetch("https://digitally-yours.onrender.com/mentor/uploads")
-      .then((res) => res.json())
-      .then((data) => {
-        setCourses(data["uploads"]);
-      });
-  }, []);
 
-  const filteredCourses = courses.filter(
-    (item) =>
-      new RegExp(searchCourse, "i").test(item.title) && item.type == "learner"
-  );
 
-  const courseCategories: { title: string; url: string }[] = [
+  let courseCategories: { title: string; url: string }[] = [
     {
       title: "Flip Book",
       url: "https://heyzine.com/flip-book/15a1ea322c.html",
@@ -37,6 +18,12 @@ const CoursesPage: React.FC = () => {
     { title: "Digital Literacy", url: "DL" },
     { title: "Financial Literacy", url: "FL" },
   ];
+
+  courseCategories = courseCategories.filter(
+    (item) =>
+      new RegExp(searchCourse, "i").test(item.title)
+  );
+
   return (
     <div className="min-h-screen flex flex-col">
       <main className="flex-1">
@@ -125,7 +112,7 @@ const CoursesPage: React.FC = () => {
               );
             }
           })}
-          {filteredCourses.length == 0 && (
+          {courseCategories.length == 0 && (
             <div className="font-poppins font-bold mx-auto text-xl">
               {" "}
               Course not found!{" "}

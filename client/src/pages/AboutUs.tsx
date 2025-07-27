@@ -39,6 +39,8 @@ export default function AboutUs() {
             seen, supported, and empowered.
           </div>
         </div>
+        <div className="font-bold text-2xl my-5">Contact Us</div>
+        <div className="text-sm">jaanvayy18@gmail.com</div>
       </main>
       <Footer />
     </div>

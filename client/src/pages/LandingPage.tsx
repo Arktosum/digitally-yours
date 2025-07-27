@@ -43,13 +43,7 @@ export default function LandingPage() {
           <img src="/landing_hero.png" alt="" />
         </div>
 
-        <div className="px-5 text-sm my-5 font-poppins text-center">
-          Yet, millions of people, especially those with disabilities are left
-          behind, not because they lack potential, but because they lack access
-          to inclusive learning tools and supportive systems that meet them
-          where they are.
-        </div>
-        <div className="px-5 my-1 text-xl font-bold font-poppins">
+        <div className="px-5 my-1 text-xl font-semibold font-poppins text-center">
           What We Offer?
         </div>
         <div className="flex flex-col justify-center items-center p-5">
@@ -97,7 +91,7 @@ export default function LandingPage() {
         <div className="my-1 flex flex-col justify-center items-center p-5">
           <div className="font-poppins bg-[#DFEEE4] flex flex-col gap-5 p-5 rounded-xl">
             <div className="font-bold text-center flex justify-center items-center gap-2">
-              <img src="/handshake.png" alt="" className="w-10 h-10" />
+              <img src="/handshake.png" alt="" className="w-6 h-6" />
               <div> Creating Lifelong Impact</div>
             </div>
             <div className="text-sm text-center">
